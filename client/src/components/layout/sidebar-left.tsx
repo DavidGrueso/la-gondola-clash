@@ -1,8 +1,7 @@
 import { MedievalCard } from "@/components/ui/medieval-card";
-import { useLocation } from "wouter";
+
 
 export default function SidebarLeft() {
-  const [location] = useLocation();
   const recentBattles = [
     { enemy: "Matadragones", result: "Victoria", time: "hace 2 horas", status: "win" },
     { enemy: "Fénix Renaciente", result: "Derrota", time: "hace 1 día", status: "loss" },
@@ -15,8 +14,6 @@ export default function SidebarLeft() {
     { label: "Guerras Ganadas", value: "287" },
     { label: "Nivel", value: "18" },
   ];
-
-
 
   return (
     <div className="space-y-6">

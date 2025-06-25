@@ -1,8 +1,6 @@
 import { MedievalCard } from "@/components/ui/medieval-card";
-import { useLocation } from "wouter";
 
 export default function SidebarRight() {
-  const [location] = useLocation();
   const clanNews = [
     {
       title: "🎉 ¡Nuevo Co-Líder Promovido!",
