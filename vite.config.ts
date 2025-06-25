@@ -12,9 +12,13 @@ export default defineConfig({
   },
   root: "client",
   build: {
-    outDir: "dist",
+    outDir: "../dist",
     emptyOutDir: true,
-    assetsDir: "assets",
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "client/index.html")
+      }
+    }
   },
   server: {
     port: 3000,
