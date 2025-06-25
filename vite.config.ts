@@ -7,14 +7,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client/src"),
-      "@shared": "/shared",
-      "@assets": "/attached_assets"
+      "@assets": path.resolve(__dirname, "client/src/assets")
     }
   },
   root: "client",
   build: {
     outDir: "dist",
-    emptyOutDir: true
+    emptyOutDir: true,
+    assetsDir: "assets",
   },
   server: {
     port: 3000,

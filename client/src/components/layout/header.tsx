@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import Logo from "/home/psd/GONDOLA/la-gondola-clash/client/public/GondolaLogo.png";
+import Logo from "@/assets/GondolaLogo.png";
 
 export default function Header() {
   const [location] = useLocation();
