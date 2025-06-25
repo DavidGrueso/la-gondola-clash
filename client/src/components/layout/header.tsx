@@ -1,5 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
+import Logo from "/home/psd/GONDOLA/la-gondola-clash/client/public/GondolaLogo.png";
 
 export default function Header() {
   const [location] = useLocation();
@@ -14,16 +15,18 @@ export default function Header() {
     <header className="medieval-gradient border-b-4 border-yellow-500 shadow-2xl">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center">
-          <div className="mb-4">
+          <div className="mb-1">
             <img 
-              src="https://images.unsplash.com/photo-1594736797933-d0bc2a0d0522?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200" 
+              src={Logo} 
               alt="LA GÓNDOLA Clan Logo - Medieval Castle Emblem" 
-              className="mx-auto h-20 w-auto rounded-lg border-2 border-yellow-500"
+              className="mx-auto h-[500px] w-auto"
             />
           </div>
+          {/*
           <h1 className="font-decorative text-4xl md:text-6xl text-yellow-500 glow-effect mb-2">
             LA GÓNDOLA
           </h1>
+          */}
           <p className="font-medieval text-yellow-100 text-lg">Crónicas del Clan Legendario</p>
         </div>
         

@@ -1,4 +1,5 @@
 import { MedievalCard } from "@/components/ui/medieval-card";
+import Logo from "/home/psd/GONDOLA/la-gondola-clash/client/public/GondolaLogo.png";
 
 export default function Home() {
   return (
