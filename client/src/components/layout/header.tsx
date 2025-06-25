@@ -15,11 +15,11 @@ export default function Header() {
     <header className="medieval-gradient border-b-4 border-yellow-500 shadow-2xl">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center">
-          <div className="mb-1">
+          <div className="mb-0"> {/* Cambiado de mb-1 a mb-0 */}
             <img 
               src={Logo} 
               alt="LA GÓNDOLA Clan Logo - Medieval Castle Emblem" 
-              className="mx-auto h-[500px] w-auto"
+              className="mx-auto h-[500px] w-auto block" /* Añadido block */
             />
           </div>
           {/*
@@ -27,7 +27,9 @@ export default function Header() {
             LA GÓNDOLA
           </h1>
           */}
-          <p className="font-medieval text-yellow-100 text-lg">Crónicas del Clan Legendario</p>
+          <p className="font-medieval text-yellow-100 text-lg -mt-2"> {/* Añadido -mt-2 */}
+            Crónicas del Clan Legendario
+          </p>
         </div>
         
         <nav className="mt-6">
